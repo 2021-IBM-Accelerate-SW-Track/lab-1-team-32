@@ -1,6 +1,7 @@
 //import Header from "./component/header"
 import './App.css';
 import React, {Component} from 'react';
+import Checkbox from '@material-ui/core/Checkbox'
 
 class App extends Component{
   constructor()
@@ -19,11 +20,13 @@ class App extends Component{
   render() {
     return (
       <div className="App">
-        <input type="text" onCharge={ this.handle.bind(this)} />
+        <input type="text" onChange={ this.handle.bind(this)} />
         <h1>{this.state.data}</h1>
+        <Checkbox color="secondary" />
       </div>
     );
   }
 }
+
 
 export default App;
