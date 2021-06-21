@@ -96,7 +96,7 @@ class App extends Component{
             {
               this.state.list.map((item)=>{
                 return(
-                  <TableRow>
+                  <TableRow key={item.name}>
                     <TableCell>
                       <Editable_Label text={item.name} onSubmitEdit={(newText)=>{this.submitEdit(item.name, newText)}}></Editable_Label>
                     </TableCell>
