@@ -1,29 +1,13 @@
-//import Header from "./component/header"
+import Header from "./component/header"
 import './App.css';
-import React, {Component} from 'react';
+import TodoList from "./components/TodoList";
 
-class App extends Component{
-  constructor()
-  {
-    super();
-    this.state={
-      data:'',
-    }
-  }
-  handle(event)
-  {
-    this.setState({
-      data:event.target.value
-    })
-  }
-  render() {
-    return (
-      <div className="App">
-        <input type="text" onCharge={ this.handle.bind(this)} />
-        <h1>{this.state.data}</h1>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <TodoList/>
+    </div>
+  );
 }
 
 export default App;
