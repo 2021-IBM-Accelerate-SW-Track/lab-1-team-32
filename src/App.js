@@ -81,8 +81,8 @@ class App extends Component{
     return (
       <div className="App">
 
-        <input type="text" id="input" onChange={ this.handle.bind(this) } />
-        <button type="button" onClick={ this.submitInput.bind(this) }>Add Item</button>
+        <input type="text" id="input" data-testid="new-item-input" onChange={ this.handle.bind(this) } />
+        <button type="button" data-testid="new-item-button" onClick={ this.submitInput.bind(this) }>Add Item</button>
 
         <Table>
           <TableHead>
